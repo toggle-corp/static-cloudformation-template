@@ -1,5 +1,5 @@
 # static-cloudformation-template
-## Development
+## Setup instructions
 
 Change following variables
 
@@ -9,3 +9,7 @@ Change following variables
   PolicyName: your-policy-name
   UpdateIamUserName: your-username
 ```
+
+Move your static content inside build directory
+
+Create a deploy branch and push latest changes to be deploy in deploy branch
