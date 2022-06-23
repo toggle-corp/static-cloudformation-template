@@ -4,11 +4,11 @@ Description: Creates an S3 bucket, Cloudfront to host static web pages
 Parameters:
   Env:
     Type: String
-    Description: 'The environment name your service, job, or workflow is being deployed to.'
+    Description: 'The environment name your service, job, or workflow is being deployed to.' # Change this
     AllowedValues:
       - prod
   HostedZoneId:
-    Description: 'The Route 53 hosted zone ID to create the domain in.'
+    Description: 'The Route 53 hosted zone ID to create the domain in.' # Change this
     Type: AWS::Route53::HostedZone::Id
 
 Mappings:
