@@ -11,15 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Release
-      # Change this
-      url: https://yourwebsite.com
+            url: https://yourwebsite.com # Change this
+
     if: github.event_name == 'push'
 
     steps:
       - uses: actions/download-artifact@v1
         with:
-          # Change this
-          name: website-name
+          name: website-name # Change this
           path: build
 
       # Copy build to S3
